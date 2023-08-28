@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM part 2</title>
+  </head>
+  <body>
+    <ul>
+      <li>One</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+    <script>
+      // Append Child
+      let ele = document.createElement('h1');
+      ele.className = 'heading';
+      ele.style.fontSize = '20px';
+      ele.textContent = 'Create Heading One';
+      console.log(ele);
+      document.body.appendChild(ele);
+
+      // Remove Child
+      let ul = document.querySelector('ul');
+      console.log(ul);
+      let lists = document.querySelectorAll('li');
+      console.log(lists);
+      for (li of lists) {
+        ul.removeChild(li);
+      }
+    </script>
+  </body>
+</html>
