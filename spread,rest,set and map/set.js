@@ -21,12 +21,14 @@ console.log(newSet);
 
 // +++++++++++++++++++++++++++++++++++++++++++
 
-// function setdif(setA, setB) {
-//   return new Set(
-//     setA.filter((ele) => {
-//       !setB.has(ele);
-//     })
-//   );
-// }
+console.log('hhhhhhhhhhh');
 
-// setdif(3, 6);
+function setdif(setX, setY) {
+  let setA = new Set(setX);
+  let setB = new Set(setY);
+  console.log(setA);
+  console.log(setB);
+  [...setA].filter((el) => console.log(!setB.has(el)));
+}
+
+setdif([1, 2, 3, 4], [4, 6, 7, 8]);
