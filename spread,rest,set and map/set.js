@@ -19,9 +19,9 @@ console.log(newSet.has(9)); // O/P IN BOOLEAN VALUE
 newSet.clear();
 console.log(newSet);
 
-// +++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++ TWO ARRAY CONVERT IN SET AND FILTER SET OF DUPLICACY +++++++++++++++++++++
 
-console.log('hhhhhhhhhhh');
+console.log('/////////////////////');
 
 function setdif(setX, setY) {
   let setA = new Set(setX);
