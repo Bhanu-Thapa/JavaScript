@@ -1,4 +1,5 @@
 class Product {
+  // # use for abstraction
   #name;
   constructor(n) {
     console.log('into constructor');
